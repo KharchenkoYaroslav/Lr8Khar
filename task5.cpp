@@ -1,4 +1,4 @@
-#include <iostream >
+#include <iostream>
 using namespace std;
 class mybase
 {
@@ -28,7 +28,7 @@ class derived2 : private mybase
 int main()
 {
     derived1 obj1;
-    derived2 obj2;
+    //derived2 obj2;// - просто щоб компілятор не жалівся що об'єкт не використовується
     int i, j;
 
     obj1.getab(i, j);
